@@ -1,21 +1,45 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Duomenis site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <div
+    style={{
+      display: `flex`,
+      flexDirection: `column`,
+      justifyContent: `center`,
+      alignItems: `center`,
+      minHeight: `100vh`,
+      minHeight: `-webkit-fill-available`,
+      width: `100%`,
+      background: `#f0575d`,
+    }}
+  >
+    <h1
+      style={{
+        color: `#ffffff`,
+        fontSize: `72px`,
+        fontFamily: `'Montserrat', sans-serif`,
+        fontWeight: `400`,
+        letterSpacing: `-4px`
+      }}
+    >
+      Duomenis
+    </h1>
+    <p
+      style={{
+        color: `#ffffff`,
+        fontSize: `24px`,
+        fontFamily: `'Montserrat', sans-serif`,
+        fontWeight: `300`,
+        maxWidth: `800px`,
+        textAlign: `center`,
+        lineHeight: `32px`,
+      }}
+    >
+      Reinventa tu negocio en la era digital con la ayuda de nuestro equipo de
+      desarrollo de software combinado con nuestra consultoría estratégica de
+      negocios e innovación.
+    </p>
+  </div>
 )
 
 export default IndexPage
