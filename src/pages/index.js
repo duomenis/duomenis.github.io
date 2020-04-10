@@ -1,4 +1,5 @@
 import React from "react"
+import "../components/layout.css"
 
 const IndexPage = () => (
   <div
